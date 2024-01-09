@@ -3,64 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form1</title>
+    <link rel="stylesheet" href="style.css"/>
+    <title>SignUp</title>
 </head>
 <body>
-    <h2>Pendaftaran Partai Mukbang Nanas</h2>
-
-    <form action="" method="post">
-        <table>
-            <tr>
-                <td>Nama</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Pasword</td>
-                <td><input type="password"></td>
-            </tr>
-            <tr>
-                <td>ID member</td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td>Tanggal Join</td>
-                <td><input type="date"></td>
-            </tr>
-            <tr>
-                <td>Jenis Kelamin</td>
-                <td><input type="radio" name="jk">Laki laki
-                    <input type="radio" name="jk">Perempuan
-                </td>
-            </tr>
-            <tr>
-                <td>Hobi</td>
-                <td><input type="checkbox"> Nyanyi
-                    <input type="checkbox"> Ngoding
-                    <input type="checkbox"> Mukbang
-                </td>
-            </tr>
-            <tr>
-                <td>Asal</td>
-                <td>
-                <select>
-                    <option>Ngawi</option>
-                    <option>Bogor</option>
-                    <option>Himalaya</option>
-                </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Deskripsi Visi Misi</td>
-                <td><textarea></textarea></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="simpan">
-                    <input type="reset" value="reset">
-                    <input type="button" value="kembali">
-                </td>
-            </tr>
-        </table>
-    </form>
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <h1>Welcome To</h1>
+                <p>Komunitas Mabar</p>
+            </section>
+        </div>
+        <div class="right">
+            <form>
+                <section class="copy">
+                    <h2>Sign Up</h2>
+                    <div class="login-container">
+                        <p>Sudah punya akun? <a href="#"><strong>Log In</strong></a></p>
+                    </div>
+                </section>
+                <div class="input-container name">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" class="fname" placeholder="Your Name"/>
+                </div>
+                <div class="input-container email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="email" placeholder="example@gmail.com"/>
+                </div>
+                <div class="input-container password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="password" placeholder="Must be atleast 6 character"/>
+                </div>
+                <div class="input-container cta">
+                    <label class="checkbox-container">
+                        <input type="checkbox"/>
+                        <span class="checkmark"></span>
+                        Sign Up for email updates.
+                    </label>
+                </div>
+                <button class="signup-btn" type="submit">Sign Up</button>
+                <section class="copy-legal">
+                    <p>
+                        <span class="small">By continuing,you agree to accept our <br />
+                          <a href="#">Privacy Policy</a>&amp;<a href="#">Terms of service</a></span>
+                    </p>                                 
+                </section>
+            </form>
+        </div>
+    </div>         
 </body>
 </html>
